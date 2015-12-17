@@ -1,3 +1,5 @@
+![meccu](https://www.dropbox.com/s/mmzy4pdl1vlum7m/meccu_small.png?dl=0)
+
 # meccu.sh
 A very small, bash-based framework for collecting metrics for graphite servers.  Meant to be used with older servers that lack the dependencies for running current versions of great tools like collectd, etc.
 
