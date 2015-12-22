@@ -11,6 +11,8 @@ INTERVAL=10
 GRAPHITE_SERVER="graphite.server.domain"
 # graphite server port
 PORT='2003'
+# where to store the PID file
+PIDFILE="/var/run/meecu.pid"
 #this is where your metric scripts are located.
 # metric scripts are a little weird right now.
 # the first line is assumed to be for interpreter
@@ -49,4 +51,4 @@ sleep ${INTERVAL}
 
 # End of cycle
 done
-} < /dev/null > /var/run/meecu.pid 2>&1 &
+} < /dev/null > ${PIDFILE} 2>&1 &
