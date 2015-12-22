@@ -1,5 +1,5 @@
 #!/bin/bash
 #load1
-LOADAVG1=$(cat /proc/loadavg | cut -d' ' -f1)
+LOADAVG1=$(uptime | awk '{print $10}' | sed 's/,//')
 
 echo $LOADAVG1
