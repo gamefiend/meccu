@@ -1,7 +1,7 @@
 ![meccu](https://www.dropbox.com/s/mmzy4pdl1vlum7m/meccu_small.png?dl=0)
 
 # meccu.sh
-A very small, bash-based framework for collecting metrics for graphite servers.  Meant to be used with older servers that lack the dependencies for running current versions of great tools like collectd, etc.
+Meccu is a very small, bash-based framework for collecting metrics for graphite servers. It is meant to be used with older servers that lack the dependencies for running current versions of great tools like collectd, etc.
 
 Right now meccu needs netcat and you should be all set!
 
@@ -10,7 +10,7 @@ Right now meccu needs netcat and you should be all set!
 * modify the meccu.sh with the graphite information you need.
 * put any data collection scripts you want in the metrics directory, then:
     sh mecchu.sh
-* et voila! It should start running the collection and sending to your graphite server ever INTERVAL seconds.
+* et voila! It should start running the collection and sending to your graphite server every `${INTERVAL}` seconds.
 
 ## TODO
 Lots of stuff to do:
